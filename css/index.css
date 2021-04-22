@@ -1,3 +1,7 @@
+body {
+    font-family: 'Roboto Mono', monospace;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -23,7 +27,8 @@ a {
     align-items: center;
     margin-right: 30px;
 
-    font: bold 20px 'Roboto Mono', monospace;
+    font-size: 20px;
+    font-weight: bold;
     color: #F1FAEE;
     text-decoration: none;
 
@@ -50,7 +55,7 @@ a:hover::before { animation: spin 1s linear infinite reverse; }
     100% { transform: rotate(360deg); }
 }
 
-#button {
+.button {
     display: inline-block;
     padding: 18px 20px;
     margin-right: 0; 
@@ -59,4 +64,27 @@ a:hover::before { animation: spin 1s linear infinite reverse; }
     box-shadow: 5px 5px 0 #000;
 }
 
-#button:hover { transform: scale(1.05); }
+.button:hover { transform: scale(1.05); }
+
+section {
+    display: inline-block;
+    padding: 36px 84px;
+
+    background-color: #3A4042;
+    text-align: center;
+    box-shadow: 10px 10px 0 #000;
+}
+
+h1 {
+    font-size: 45px;
+    font-weight: bold;
+    color: #E63946;
+    text-shadow: 4px 4px 0 #000;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: medium;
+    color: #F1FAEE;
+    text-shadow: 4px 4px 0 #000;
+}
