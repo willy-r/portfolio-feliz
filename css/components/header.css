@@ -1,0 +1,19 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+
+    background-color: #1D3557;
+    border-bottom: 10px solid #000;
+}
+
+.header .avatar { 
+    margin-right: 15px;
+
+    box-shadow: 5px 5px 0 #000;
+
+    transition: transform 250ms ease-in-out;
+}
+
+.header .avatar:hover { transform: scale(1.1); }

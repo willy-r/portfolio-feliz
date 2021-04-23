@@ -1,0 +1,24 @@
+.banner {
+    height: 800px;
+
+    background-image: url(../../assets/images/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 10px solid #000;
+}
+
+.banner .wrapper {
+    display: inline-block;
+    position: relative;
+    top: 116px;
+    left: 93px;
+}
+
+.banner .box { margin-bottom: 38px; }
+
+.banner .navigation {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navigation .button { font-weight: 500; }
