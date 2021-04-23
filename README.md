@@ -2,7 +2,6 @@
 
 Portfólio (em construção) feito durante o curso **HTML e CSS Feliz** do [Marco Bruno](https://www.twitch.tv/marcobrunodev) da [FiredLabs](https://www.firedlabs.com/).
 
----
 
 ## Seções do Portfólio
 
@@ -11,7 +10,6 @@ Portfólio (em construção) feito durante o curso **HTML e CSS Feliz** do [Marc
   - [Sobre](#link) - Mostra um pouco sobre mim.
   - [Contatos](#link) - Mostra algumas formas de se comunicar comigo.
 
----
 
 ## Sobre
 
@@ -19,6 +17,7 @@ Projeto de um portfólio (não responsivo) feito durante o curso do Marco Bruno 
 
 ## Extras
 
-[Aqui](resourses/html-css-feliz.fig) você encontrará o Figma base que foi feito pelo Marco Bruno.
-
-[Aqui](#link) você encontrá o Figma que foi modificado por mim.
+- [Figma](resourses/html-css-feliz.fig) base que foi feito pelo Marco Bruno.
+- [Figma](#link) que foi modificado por mim.
+- [Imagem de background](assets/images/background.png) por [Diego PH](https://unsplash.com/@jdiegoph?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) tirada do [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText).
+  
