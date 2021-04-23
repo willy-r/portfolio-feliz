@@ -15,19 +15,26 @@
 
     <!-- CSS local. -->
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/index.css">
+    <!-- Componentes. -->
+    <link rel="stylesheet" href="css/components/header.css">
+    <link rel="stylesheet" href="css/components/action.css">
+    <link rel="stylesheet" href="css/components/banner.css">
+    <link rel="stylesheet" href="css/components/box.css">
+    <link rel="stylesheet" href="css/components/title.css">
+    <link rel="stylesheet" href="css/components/subtitle.css">
+    <link rel="stylesheet" href="css/components/button.css">
   </head>
   <body>
     <!-- Cabeçalho, normalmente fica no início da página. -->
-    <header>
-      <img src="assets/images/avatar.png" alt="Avatar do William Rodrigues">
+    <header class="header">
+      <img class="avatar" src="assets/images/avatar.png" alt="Avatar do William Rodrigues">
 
       <!-- Navegação, tag utilizada para guardar os links de navegação do site. -->
-      <nav>
-        <a href="" lang="en">Skills</a>
-        <a href="">Projetos</a>
-        <a href="">Sobre</a>
-        <a href="">Contatos</a>
+      <nav class="navigation">
+        <a class="action" href="" lang="en">Skills</a>
+        <a class="action" href="">Projetos</a>
+        <a class="action" href="">Sobre</a>
+        <a class="action" href="">Contatos</a>
         <a class="button" href="" download="" type="" lang="en">
           Download CV
         </a>
@@ -35,9 +42,20 @@
     </header>
 
     <!-- Conteúdo principal. -->
-    <section>
-      <h1>William Rodrigues</h1>
-      <h2 lang="en">Web Developer</h2>
+    <section class="banner">
+      <div class="wrapper">
+        <div class="box">
+          <h1 class="title">William Rodrigues</h1>
+          <h2 class="subtitle" lang="en">Web Developer</h2>
+        </div>
+        
+        <div class="navigation">
+          <a class="button" href="" download="" type="" lang="en">
+            Download CV
+          </a>
+          <a class="button" href="">Contatos</a>
+        </div>
+      </div>
     </section>
   </body>
 </html>
