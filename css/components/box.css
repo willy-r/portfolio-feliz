@@ -1,0 +1,13 @@
+.box {
+    display: inline-block;
+    padding: 35px 84px;
+
+    background-color: #3A4042;
+    text-align: center;
+    box-shadow: 10px 10px 0 #000;
+}
+
+/* Adiciona uma margem abaixo de todos os .title dentro de .box */
+.box .title {
+    margin-bottom: 10px;
+}
