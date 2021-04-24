@@ -23,6 +23,9 @@
     <link rel="stylesheet" href="css/components/title.css">
     <link rel="stylesheet" href="css/components/subtitle.css">
     <link rel="stylesheet" href="css/components/button.css">
+    <link rel="stylesheet" href="css/components/skills.css">
+    <link rel="stylesheet" href="css/components/skill.css">
+    <link rel="stylesheet" href="css/components/progress-bar.css">
   </head>
   <body>
     <!-- Cabeçalho, normalmente fica no início da página. -->
@@ -30,8 +33,8 @@
       <img class="avatar" src="assets/images/avatar.png" alt="Avatar do William Rodrigues">
 
       <!-- Navegação, tag utilizada para guardar os links de navegação do site. -->
-      <nav class="navigation">
-        <a class="action" href="" lang="en">Skills</a>
+      <nav>
+        <a class="action" href="#skills" lang="en">Skills</a>
         <a class="action" href="">Projetos</a>
         <a class="action" href="">Sobre</a>
         <a class="action" href="">Contatos</a>
@@ -45,8 +48,8 @@
     <section class="banner">
       <div class="wrapper">
         <div class="box">
-          <h1 class="title">William Rodrigues</h1>
-          <h2 class="subtitle" lang="en">Web Developer</h2>
+          <h1 class="title -shadow">William Rodrigues</h1>
+          <h2 class="subtitle -shadow" lang="en">Web Developer</h2>
         </div>
         
         <div class="navigation">
@@ -54,6 +57,63 @@
             Download CV
           </a>
           <a class="button" href="">Contatos</a>
+        </div>
+      </div>
+    </section>
+    
+    <section class="skills">
+      <h1 class="title -white -underline" id="skills">Skills</h1>
+
+      <div class="wrapper">
+        <div class="skill">
+          <img class="logo" src="assets/images/ico-python.png" alt="Ìcone logo do Python">
+          <div class="info">
+            <h2 class="subtitle">Python</h2>
+            <progress class="progress-bar" value="80" max="100">50%</progress>
+          </div> 
+        </div>
+        <div class="skill">
+          <img class="logo" src="assets/images/ico-django.png" alt="Ìcone logo do Django">
+          <div class="info">
+            <h2 class="subtitle">Django</h2>
+            <progress class="progress-bar" value="75" max="100">50%</progress>
+          </div> 
+        </div>
+        <div class="skill">
+          <img class="logo" src="assets/images/ico-js.png" alt="Ìcone logo do JavaScript">
+          <div class="info">
+            <h2 class="subtitle">JavaScript</h2>
+            <progress class="progress-bar" value="50" max="100">50%</progress>
+          </div> 
+        </div>
+        <div class="skill">
+          <img class="logo" src="assets/images/ico-html5.png" alt="Ìcone logo do HTML5">
+          <div class="info">
+            <h2 class="subtitle">HTML</h2>
+            <progress class="progress-bar" value="90" max="100">50%</progress>
+          </div> 
+        </div>
+        <div class="skill">
+          <img class="logo" src="assets/images/ico-css3.png" alt="Ìcone logo do CSS3">
+          <div class="info">
+            <h2 class="subtitle">CSS</h2>
+            <progress class="progress-bar" value="75" max="100">50%</progress>
+          </div> 
+        </div>
+        <div class="skill">
+          <img class="logo" src="assets/images/ico-sql.png" alt="Ìcone logo do SQL (
+            Search Query Language)">
+          <div class="info">
+            <h2 class="subtitle">SQL</h2>
+            <progress class="progress-bar" value="30" max="100">50%</progress>
+          </div> 
+        </div>
+        <div class="skill">
+          <img class="logo" src="assets/images/ico-git.png" alt="Ìcone logo do Git">
+          <div class="info">
+            <h2 class="subtitle">Git</h2>
+            <progress class="progress-bar" value="70" max="100">50%</progress>
+          </div> 
         </div>
       </div>
     </section>

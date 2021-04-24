@@ -18,7 +18,7 @@
 
 .banner .navigation {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .navigation .button { font-weight: 500; }
