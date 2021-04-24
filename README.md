@@ -5,7 +5,7 @@ Portfólio (em construção) feito durante o curso **HTML e CSS Feliz** do [Marc
 
 ## Seções do Portfólio
 
-  - [Skills](#link) - Mostra o que eu já fiz usando algumas skills aprendidas até o momento.
+  - [Skills](https://willy-r.github.io/portfolio-feliz/#skills) - Mostra o que eu já fiz usando algumas skills aprendidas até o momento.
   - [Projetos](#link) - Mostra alguns dos projeto desenvolvidos por mim (a maioria incompleta, obviamente).
   - [Sobre](#link) - Mostra um pouco sobre mim.
   - [Contatos](#link) - Mostra algumas formas de se comunicar comigo.
