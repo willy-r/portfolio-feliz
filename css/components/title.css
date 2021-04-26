@@ -2,9 +2,12 @@
     font-size: 45px;
     font-weight: bold;
     color: #E63946;
+    text-shadow: 4px 4px 0 #000;
 }
 
-.title.-underline { text-decoration-line: underline;}
-.title.-white { color: #F1FAEE; }
-
-.title.-shadow { text-shadow: 4px 4px 0 #000; }
+/* Variação para um title com cor branca, com underline e sem sombra. */
+.title.-second {
+    color: #F1FAEE;
+    text-decoration-line: underline;
+    text-shadow: none;
+}

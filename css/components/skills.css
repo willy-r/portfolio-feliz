@@ -9,7 +9,7 @@
     border-bottom: 10px solid #1D3557;
 }
 
-.skills .title { margin-bottom: 38px; }
+.skills .title { margin-bottom: 55px; }
 
 /* Só cabem 8 skills no total, se colocar mais quebra o layout. */
 .skills .wrapper {
