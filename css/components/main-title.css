@@ -1,4 +1,4 @@
-.title {
+.main-title {
     font-size: 45px;
     font-weight: bold;
     color: #E63946;
@@ -6,7 +6,7 @@
 }
 
 /* Variação para um title com cor branca, com underline e sem sombra. */
-.title.-second {
+.main-title.-second {
     color: #F1FAEE;
     text-decoration-line: underline;
     text-shadow: none;
