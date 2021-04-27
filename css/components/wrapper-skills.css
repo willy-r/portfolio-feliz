@@ -1,0 +1,8 @@
+.wrapper-skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1050px; /* Lê-se: "No máximo eu quero que tenha 1050px de largura". */
+}
+
+.wrapper-skills .skill-description { margin-bottom: 38px; }

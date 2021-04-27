@@ -1,11 +1,10 @@
-.skill-description {
-    display: inline-flex;
-    margin-bottom: 38px;
+.skill-description { display: flex; }
+
+.skill-description .logo {
+    width: 92px;
+    height: 92px;
+    margin-right: 18px;
 }
-
-.skill-description:nth-child(4n) { margin-bottom: 0; }
-
-.skill-description .logo { margin-right: 18px; }
 
 .skill-description .description {
     display: flex;

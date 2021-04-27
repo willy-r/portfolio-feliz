@@ -7,7 +7,5 @@
     box-shadow: 10px 10px 0 #000;
 }
 
-/* Adiciona uma margem abaixo de todos os .title dentro de .box */
-.box .title {
-    margin-bottom: 10px;
-}
+/* Adiciona uma margem abaixo de todos os .main-title dentro de .box */
+.box .main-title { margin-bottom: 10px; }
