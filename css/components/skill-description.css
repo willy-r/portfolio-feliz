@@ -1,0 +1,14 @@
+.skill-description {
+    display: inline-flex;
+    margin-bottom: 38px;
+}
+
+.skill-description:nth-child(4n) { margin-bottom: 0; }
+
+.skill-description .logo { margin-right: 18px; }
+
+.skill-description .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}

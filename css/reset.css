@@ -70,7 +70,7 @@ button {
     cursor: pointer;
 }
 
-/* Reseta o valor padrão da tag <progress> em alguns navegadores. */
+/* Reseta o valor padrão da tag <progress> em todos navegadores. */
 progress {
     border: none; /* Firefox, Opera 12 */
 
@@ -78,3 +78,5 @@ progress {
        -moz-appearance: none; /* Firefox */
             appearance: none;
 }
+
+abbr { text-decoration: none; }
