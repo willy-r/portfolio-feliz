@@ -1,0 +1,24 @@
+.project-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 205px;
+    height: 240px;
+
+    font-family: 'Work Sans', sans-serif;
+    text-align: right;
+}
+
+.project-information .main-subtitle {
+    margin-bottom: 8px;
+
+    font-size: 18px;
+    text-decoration-line: underline;
+    
+}
+
+.project-information .description {
+    color: #F1FAEE;
+    font-size: 14px;
+    line-height: 14px;
+}

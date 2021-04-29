@@ -9,4 +9,9 @@
     border-bottom: 10px solid #1D3557;
 }
 
+.main-section.-second {
+    background-color: #000;
+    border-bottom: 10px solid #E63946;
+}
+
 .main-section > .main-title { margin-bottom: 55px; }

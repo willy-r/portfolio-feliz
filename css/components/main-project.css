@@ -1,4 +1,6 @@
 .main-project {
+    position: relative;
+
     width: 280px;
     height: 280px;
     padding: 16px 34px;
@@ -7,10 +9,22 @@
     box-shadow: 10px 10px 0px #F1FAEE;
 }
 
-.main-project.-bg-white { background-color: #F1FAEE; }
 .main-project.-bg-red { background-color: #E63946; }
 
+.main-project .project-information {
+    position: absolute;
+    z-index: 1;
+}
+
 .main-project .image {
+    position: relative;
+    z-index: 2;
+
     width: 210px;
     height: 240px;
+}
+
+.main-project .image:hover {
+    opacity: 0;
+    transition: opacity 600ms ease-out;
 }
