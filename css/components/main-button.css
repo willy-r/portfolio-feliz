@@ -1,4 +1,4 @@
-.button {
+.main-button {
     display: inline-block;
     padding: 18px 20px;
     margin-right: 0; 
@@ -14,4 +14,4 @@
     transition: transform 250ms ease-in-out;
 }
 
-.button:hover { transform: scale(1.05); }
+.main-button:hover { transform: scale(1.05); }

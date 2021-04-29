@@ -1,4 +1,4 @@
-.banner {
+.main-banner {
     height: 800px;
 
     background-image: url(../../assets/images/background.png);
@@ -7,18 +7,18 @@
     border-bottom: 10px solid #000;
 }
 
-.banner .wrapper {
+.main-banner .wrapper {
     display: inline-block;
     position: relative;
     top: 116px;
     left: 93px;
 }
 
-.banner .box { margin-bottom: 38px; }
+.main-banner .main-box { margin-bottom: 38px; }
 
-.banner .navigation {
+.main-banner .navigation {
     display: flex;
     justify-content: space-around;
 }
 
-.navigation .button { font-weight: 500; }
+.navigation .main-button { font-weight: 500; }

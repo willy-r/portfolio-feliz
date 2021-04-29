@@ -1,4 +1,4 @@
-.action {
+.main-action {
     display: inline-flex;
     align-items: center;
     margin-right: 30px;
@@ -11,10 +11,10 @@
     transition: transform 250ms ease-in-out;
 }
 
-.action:hover { transform: scale(1.2); }
+.main-action:hover { transform: scale(1.2); }
 
-/* Pseudo-elemento para criar o quadrado antes do conteúdo da tag <a>. */
-.action::before {
+/* Pseudo-elemento para criar o quadrado antes de alguma tag. */
+.main-action::before {
     width: 10px;
     height: 10px;
     margin-right: 10px;
@@ -24,7 +24,7 @@
 }
 
 /* Gira o quadrado quando passa o mouse por cima. */
-.action:hover::before { animation: spin 1s linear infinite reverse; }
+.main-action:hover::before { animation: spin 1s linear infinite reverse; }
 
 @keyframes spin { 
     0% { transform: rotate(0deg); }

@@ -1,4 +1,4 @@
-.section {
+.main-section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,4 +9,4 @@
     border-bottom: 10px solid #1D3557;
 }
 
-.section > .main-title { margin-bottom: 55px; }
+.main-section > .main-title { margin-bottom: 55px; }
