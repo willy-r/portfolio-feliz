@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfólio pessoal do William Rodrigues, criado no Curso de HTML e CSS Feliz do Marco Bruno.">
+    <meta name="description" content="Portfólio pessoal do William Rodrigues, criado no curso de HTML e CSS Feliz do Marco Bruno.">
     <!-- Favicon criado usando https://favicon.io -->
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
 
@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="css/components/wrapper-skills.css">
     <link rel="stylesheet" href="css/components/skill-description.css">
     <link rel="stylesheet" href="css/components/progress-bar.css">
+    <link rel="stylesheet" href="css/components/wrapper-projects.css">
     <link rel="stylesheet" href="css/components/main-project.css">
     <link rel="stylesheet" href="css/components/project-information.css">
   </head>
@@ -38,7 +39,7 @@
       <!-- Navegação, tag utilizada para guardar os links de navegação do site. -->
       <nav>
         <a class="main-action" href="#skills" lang="en">Skills</a>
-        <a class="main-action" href="">Projetos</a>
+        <a class="main-action" href="#projects">Projetos</a>
         <a class="main-action" href="">Sobre</a>
         <a class="main-action" href="">Contatos</a>
         <a class="main-button" href="" download="" type="" lang="en">
@@ -64,8 +65,8 @@
       </div>
     </section>
     
-    <section class="main-section">
-      <h2 class="main-title -second" id="skills">Skills</h2>
+    <section class="main-section" id="skills">
+      <h2 class="main-title -second">Skills</h2>
 
       <div class="wrapper-skills">
         <article class="skill-description">
@@ -87,10 +88,8 @@
         <article class="skill-description">
           <img class="logo" src="assets/images/ico-django.png" alt="Logo do Django">
           <div class="description">
-            <dd class="main-subtitle -second" lang="en">Django</dd>
-            <dd>
-              <progress class="progress-bar" value="75" max="100">75%</progress>
-            </dd>
+            <h3 class="main-subtitle -second" lang="en">Django</h3>
+            <progress class="progress-bar" value="75" max="100">75%</progress>
           </div> 
         </article>
         <article class="skill-description">
@@ -128,20 +127,70 @@
       </div>
     </section>
 
-    <section class="main-section -second">
+    <section class="main-section -second" id="projects">
       <h2 class="main-title -second">Projetos</h2>
 
-      <article class="main-project">
-        <div class="project-information">
-          <h3 class="main-subtitle -second">Lorem ipsum</h3>
-          <p class="description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
-          </p>
-        </div>
-        <a href="" target="_blank" rel="external" title="Ir para o GitHub do Projeto FiredLabs">
-          <img class="image" src="assets/images/logo-firedlabs.svg" alt="Logo da FiredLabs">
-        </a>
-      </article>
+      <div class="wrapper-projects">
+        <article class="main-project">
+          <div class="project-information">
+            <h3 class="main-subtitle -second">AluraFlix</h3>
+            <p class="description">
+              AluraFlix é um site (não responsivo) para adicionar e visualizar as informações dos seus filmes favoritos.
+              Ele foi fruto de um desafio da Imersão Dev realizado pela Alura e foi o meu primeiro projeto usando HTML, CSS e JavaScript. 
+            </p>
+          </div>
+          <a href="https://github.com/willy-r/aluraflix" target="_blank" rel="external" title="Ir para o GitHub do projeto AluraFlix">
+            <img class="image" src="assets/images/project-image.png" alt="Imagem genérica de um projeto">
+          </a>
+        </article>
+        <article class="main-project -bg-red">
+          <div class="project-information">
+            <h3 class="main-subtitle -second">Portfólio Feliz</h3>
+            <p class="description">
+              Portfólio Feliz é exatamente esse projeto que você está vendo, que foi desenvolvido durante o curso HTML e CSS Feliz do Marco Bruno.
+              Esse projeto abriu a minha mente para questões de componentes no CSS e escrever um HTML mais semântico.
+            </p>
+          </div>
+          <a href="https://github.com/willy-r/portfolio-feliz" target="_blank" rel="external" title="Ir para o GitHub do projeto Portfólio Feliz">
+            <img class="image" src="assets/images/project-image.png" alt="Imagem genérica de um projeto">
+          </a>
+        </article>
+        <article class="main-project -bg-red">
+          <div class="project-information">
+            <h3 class="main-subtitle -second" lang="en">Learning Log</h3>
+            <p class="description">
+              Learning Log é um site para te ajudar a estudar. Quando você estiver aprendendo sobre um determinado tópico, você consegue adicionar uma anotação relacionado à ele.
+              Ele foi o primeiro que eu fiz usando Django e na época eu não entendia muito de front-end.
+            </p>
+          </div>
+          <a href="https://github.com/willy-r/learning-log" target="_blank" rel="external" title="Ir para o GitHub do Learning Log">
+            <img class="image" src="assets/images/project-image.png" alt="Imagem genérica de um projeto">
+          </a>
+        </article>
+        <article class="main-project">
+          <div class="project-information">
+            <h3 class="main-subtitle -second">SIMOOC</h3>
+            <p class="description">
+              SIMOOC (Simple Massive Open Online Courses) é uma simples plataforma de EAD no qual qualquer pessoa pode criar um curso e publicar ele na plataforma.
+              É o projeto (ainda em construção) um pouco mais complexo desenvolvido com Django.
+            </p>
+          </div>
+          <a href="https://github.com/willy-r/simple-mooc" target="_blank" rel="external" title="Ir para o GitHub do projeto MOOC">
+            <img class="image" src="assets/images/project-image.png" alt="Imagem genérica de um projeto">
+          </a>
+        </article>
+        <article class="main-project -bg-red">
+          <div class="project-information">
+            <h3 class="main-subtitle -second" lang="en">Morse Translator</h3>
+            <p class="description">
+              Um simples tradutor de Código Morse desenvolvido com Python.
+            </p>
+          </div>
+          <a href="https://github.com/willy-r/morse-translator" target="_blank" rel="external" title="Ir para o GitHub do projeto Morse Translator">
+            <img class="image" src="assets/images/project-image.png" alt="Imagem genérica de um projeto">
+          </a>
+        </article>
+      </div>
     </section>
   </body>
 </html>
