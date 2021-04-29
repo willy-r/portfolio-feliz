@@ -1,0 +1,16 @@
+.main-project {
+    width: 280px;
+    height: 280px;
+    padding: 16px 34px;
+
+    background-color: #1D3557;
+    box-shadow: 10px 10px 0px #F1FAEE;
+}
+
+.main-project.-bg-white { background-color: #F1FAEE; }
+.main-project.-bg-red { background-color: #E63946; }
+
+.main-project .image {
+    width: 210px;
+    height: 240px;
+}
