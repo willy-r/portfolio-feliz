@@ -14,4 +14,9 @@
     border-bottom-color: #E63946;
 }
 
+.main-section.-third {
+    background-color: #1D3557;
+    border-bottom-color: #000;
+}
+
 .main-section > .main-title { margin-bottom: 55px; }
