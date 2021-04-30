@@ -12,7 +12,7 @@
     box-shadow: 10px 10px 0px #F1FAEE;
 }
 
-.main-project.-bg-red { background-color: #E63946; }
+.main-project:nth-child(even) { background-color: #E63946; }
 
 .main-project .project-information {
     position: absolute;

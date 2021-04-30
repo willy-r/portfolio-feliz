@@ -1,0 +1,11 @@
+.main-text {
+    padding-left: 80px;
+    padding-right: 80px;
+
+    font-family: 'Work Sans', sans-serif;
+    color: #F1FAEE;
+    font-size: 35px;
+    text-align: justify;
+    text-justify: distribute;
+    line-height: 38px;
+}
