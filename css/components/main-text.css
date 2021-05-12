@@ -1,9 +1,8 @@
 .main-text {
     padding-left: 80px;
     padding-right: 80px;
-
-    font-family: 'Work Sans', sans-serif;
-    color: #F1FAEE;
+    font-family: var(--ff-second);
+    color: var(--color-third);
     font-size: 30px;
     text-align: justify;
     text-justify: distribute;
@@ -11,6 +10,6 @@
 }
 
 .main-text .link {
-    color: #E63946;
+    color: var(--color-first);
     text-decoration: none;
 }

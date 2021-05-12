@@ -57,15 +57,8 @@ table {
 
 * { box-sizing: border-box; }
 
-html { scroll-behavior: smooth; }
-
-body {
-    font-family: 'Roboto Mono', monospace;
-}
-
 button {
     font-family: inherit;
-
     border: none;
     cursor: pointer;
 }
@@ -73,7 +66,6 @@ button {
 /* Reseta o valor padrão da tag <progress> em todos navegadores. */
 progress {
     border: none; /* Firefox, Opera 12 */
-
     -webkit-appearance: none; /* Google Chrome, Apple Safari, Opera (16+) */
        -moz-appearance: none; /* Firefox */
             appearance: none;

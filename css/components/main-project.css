@@ -1,18 +1,15 @@
 .main-project {
     position: relative;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     width: 280px;
     height: 280px;
-
-    background-color: #1D3557;
-    box-shadow: 10px 10px 0px #F1FAEE;
+    background-color: var(--color-second);
+    box-shadow: 10px 10px 0px var(--color-black-first);
 }
 
-.main-project:nth-child(even) { background-color: #E63946; }
+.main-project:nth-child(even) { background-color: var(--color-first); }
 
 .main-project .project-information {
     position: absolute;
@@ -22,7 +19,6 @@
 .main-project .image {
     position: relative;
     z-index: 2;
-
     width: 240px;
     height: 240px;
 }

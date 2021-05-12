@@ -4,29 +4,27 @@
     align-items: center;
     padding-top: 55px;
     padding-bottom: 70px;
-
-    background-color: #E63946;
-    border-bottom: 10px solid #1D3557;
+    background-color: var(--color-first);
+    border-bottom: 10px solid var(--color-second);
 }
 
 .main-section.-second {
-    background-color: #000;
-    border-bottom-color: #E63946;
+    background-color: var(--color-black-first);
+    border-bottom-color: var(--color-first);
 }
 
 .main-section.-third {
-    background-color: #1D3557;
-    border-bottom-color: #000;
+    background-color: var(--color-second);
+    border-bottom-color: var(--color-black-first);
 }
 
 .main-section.-third .avatar {
     width: 300px;
     height: 300px;
     margin-bottom: 35px;
-
     border-radius: 9999px;
     border: 3px solid #fff;
-    box-shadow: 0 10px 20px #000;
+    box-shadow: 0 10px 20px var(--color-black-first);
 }
 
 .main-section > .main-title { margin-bottom: 55px; }

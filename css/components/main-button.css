@@ -2,15 +2,12 @@
     display: inline-block;
     padding: 18px 20px;
     margin-right: 0; 
-
     font-size: 20px;
     font-weight: bold;
-    color: #F1FAEE;
-
-    background-color: #E63946;
-    box-shadow: 5px 5px 0 #000;
+    color: var(--color-third);
+    background-color: var(--color-first);
+    box-shadow: 5px 5px 0 var(--color-black-first);
     text-decoration: none;
-
     transition: transform 250ms ease-in-out;
 }
 

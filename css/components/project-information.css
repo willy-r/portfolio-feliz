@@ -4,20 +4,18 @@
     justify-content: center;
     width: 230px;
     height: 230px;
-
-    font-family: 'Work Sans', sans-serif;
+    font-family: var(--ff-second);
     text-align: right;
 }
 
 .project-information .main-subtitle {
     margin-bottom: 8px;
-
     font-size: 18px;
     text-decoration-line: underline;  
 }
 
 .project-information .description {
-    color: #F1FAEE;
+    color: var(--color-third);
     font-size: 15px;
-    line-height: 15px;
+    line-height: 18px;
 }

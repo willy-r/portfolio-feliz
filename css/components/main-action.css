@@ -2,12 +2,10 @@
     display: inline-flex;
     align-items: center;
     margin-right: 30px;
-
     font-size: 20px;
     font-weight: bold;
-    color: #F1FAEE;
+    color: var(--color-third);
     text-decoration: none;
-
     transition: transform 250ms ease-in-out;
 }
 
@@ -18,9 +16,8 @@
     width: 10px;
     height: 10px;
     margin-right: 10px;
-
     content: '';
-    background-color: #E63946;
+    background-color: var(--color-first);
 }
 
 /* Gira o quadrado quando passa o mouse por cima. */
