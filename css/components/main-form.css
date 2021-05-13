@@ -1,0 +1,29 @@
+.main-form {
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.main-form .label {
+    display: block;
+    margin-bottom: 5px;
+    font-family: var(--ff-second);
+    font-size: 35px;
+    color: var(--color-third);
+}
+
+.main-form .input {
+    width: 100%;
+    height: 50px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 20px;
+    font-family: var(--ff-second);
+    font-size: 20px;
+    border: 5px solid var(--color-black-first);
+}
+
+.main-form .input.-textarea {
+    height: 300px;
+    margin-bottom: 35px;
+}
