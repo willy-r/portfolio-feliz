@@ -27,4 +27,9 @@
     box-shadow: 0 10px 20px var(--color-black-first);
 }
 
+.main-section.-fourth {
+    background-color: var(--color-black-second);
+    border-bottom: none;
+}
+
 .main-section > .main-title { margin-bottom: 55px; }
