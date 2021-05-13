@@ -18,6 +18,6 @@ Projeto de um portfólio (não responsivo por enquanto) feito durante o curso do
 
 ## Extras
 
-- [Figma](resourses/html-css-feliz.fig) base que foi feito pelo Marco Bruno.
+- [Figma](assets/resourses/html-css-feliz.fig) base que foi feito pelo Marco Bruno.
 - [Figma](#link) que foi modificado por mim.
 - [Imagem de background](assets/images/background.png) por [Diego PH](https://unsplash.com/@jdiegoph?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) tirada do [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText).
