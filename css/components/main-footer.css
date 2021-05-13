@@ -1,0 +1,21 @@
+.main-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    height: 100px;
+    background-color: var(--color-black-first);
+}
+
+.main-footer .link { color: var(--color-third); }
+
+.main-footer .link:nth-child(odd) { color: var(--color-first); }
+
+.main-footer .link:not(:last-child) { margin-right: 40px; }
+
+.link .fab { 
+    font-size: 3.5em;
+    transition: transform 200ms cubic-bezier(.42,0,.81,2.3);
+}
+
+.link .fab:hover { transform: scale(1.1); }
