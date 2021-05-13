@@ -32,6 +32,7 @@
     <link rel="stylesheet" href="css/components/main-project.css">
     <link rel="stylesheet" href="css/components/project-information.css">
     <link rel="stylesheet" href="css/components/main-text.css">
+    <link rel="stylesheet" href="css/components/main-form.css">
     <link rel="stylesheet" href="css/components/main-footer.css">
 
     <!-- Font Awesome -->
@@ -47,7 +48,7 @@
         <a class="main-action" href="#skills" lang="en">Skills</a>
         <a class="main-action" href="#projects">Projetos</a>
         <a class="main-action" href="#about">Sobre</a>
-        <a class="main-action" href="">Contatos</a>
+        <a class="main-action" href="#contacts">Contatos</a>
         <a class="main-button" href="" download="" type="" lang="en">
           Download CV
         </a>
@@ -66,7 +67,7 @@
           <a class="main-button" href="" download="" type="" lang="en">
             Download CV
           </a>
-          <a class="main-button" href="">Contatos</a>
+          <a class="main-button" href="#contacts">Contatos</a>
         </div>
       </div>
     </section>
@@ -211,6 +212,23 @@
           Fora isso, eu amo ler, ver séries, ver filmes, curtir uma boa música e andar de bicicleta e nas horas vagas jogar alguns joguinhos.
         </p>
       </div>
+    </section>
+
+    <section class="main-section -fourth" id="contacts">
+      <h2 class="main-title -second">Contatos</h2>
+
+      <form class="main-form">
+        <label class="label" for="name">Nome</label>
+        <input class="input" id="name" type="text" required>
+
+        <label class="label" for="email">E-mail</label>
+        <input class="input" id="email" type="email" required>
+
+        <label class="label" for="message">Mensagem</label>
+        <textarea class="input -textarea" id="message" type="text" required></textarea>
+
+        <button class="main-button -large" title="Enviar e-mail">Enviar</button>
+      </form>
     </section>
 
     <footer class="main-footer">
