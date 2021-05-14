@@ -3,13 +3,9 @@
     height: 50px;
     padding-left: 5px;
     padding-right: 5px;
-    margin-bottom: 20px;
     font-family: var(--ff-second);
     font-size: 20px;
     border: 5px solid var(--color-black-first);
 }
 
-.main-input.-textarea {
-    height: 300px;
-    margin-bottom: 35px;
-}
+.main-input.-textarea { height: 300px; }

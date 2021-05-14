@@ -3,3 +3,9 @@
     padding-left: 40px;
     padding-right: 40px;
 }
+
+.main-form .main-label { margin-bottom: 5px; }
+
+.main-form .main-input { margin-bottom: 20px; }
+
+.main-form .main-input.-textarea { margin-bottom: 35px; }
