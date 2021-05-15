@@ -18,14 +18,7 @@
     border-bottom-color: var(--color-black-first);
 }
 
-.main-section.-third .avatar {
-    width: 300px;
-    height: 300px;
-    margin-bottom: 35px;
-    border-radius: 9999px;
-    border: 3px solid #fff;
-    box-shadow: 0 10px 20px var(--color-black-first);
-}
+.main-section.-third > .main-avatar { margin-bottom: 35px; }
 
 .main-section.-fourth {
     background-color: var(--color-black-second);

@@ -7,12 +7,9 @@
     border-bottom: 10px solid var(--color-black-first);
 }
 
-.main-header .avatar {
-    width: 60px;
-    height: 60px;
+.main-header .main-avatar {
     margin-right: 15px;
-    box-shadow: 5px 5px 0 var(--color-black-first);
     transition: transform 250ms ease-in-out;
 }
 
-.main-header .avatar:hover { transform: scale(1.1); }
+.main-header .main-avatar:hover { transform: scale(1.1); }
