@@ -220,17 +220,17 @@
     <section class="main-section -fourth" id="contacts">
       <h2 class="main-title -second">Contatos</h2>
 
-      <form class="main-form">
+      <form class="main-form" action="https://portfolio-feliz-backend.herokuapp.com/send-email" method="POST">
         <label class="main-label" for="name">Nome</label>
-        <input class="main-input" id="name" type="text" required>
+        <input class="main-input" id="name" type="text" name="name" required>
 
         <label class="main-label" for="email">E-mail</label>
-        <input class="main-input" id="email" type="email" required>
+        <input class="main-input" id="email" type="email" name="email" required>
 
         <label class="main-label" for="message">Mensagem</label>
-        <textarea class="main-input -textarea" id="message" type="text" required></textarea>
+        <textarea class="main-input -textarea" id="message" type="text" name="message" required></textarea>
 
-        <button class="main-button -large" title="Enviar e-mail">Enviar</button>
+        <button class="main-button -large" type="submit" title="Enviar e-mail">Enviar</button>
       </form>
     </section>
 
