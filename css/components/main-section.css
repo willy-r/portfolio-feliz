@@ -21,8 +21,12 @@
 .main-section.-third > .main-avatar { margin-bottom: 35px; }
 
 .main-section.-fourth {
+    padding-left: 40px;
+    padding-right: 40px;
     background-color: var(--color-black-second);
     border-bottom: none;
 }
+
+.main-section.-fourth > .information-message { margin-bottom: 35px; }
 
 .main-section > .main-title { margin-bottom: 55px; }

@@ -1,8 +1,4 @@
-.main-form {
-    width: 100%;
-    padding-left: 40px;
-    padding-right: 40px;
-}
+.main-form { width: 100%; }
 
 .main-form .main-label { margin-bottom: 5px; }
 
