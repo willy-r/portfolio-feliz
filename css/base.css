@@ -8,6 +8,14 @@
     --color-third: #f1faee;
     --color-black-first: #000;
     --color-black-second: #3a4042;
+    --color-black-third: #828282;
+
+    --color-success: #0f5132;
+    --color-success-second: #badbcc;
+    --color-success-third: #d1e7dd;
+    --color-error: #842029;
+    --color-error-second: #f5c2c7;
+    --color-error-third: #f8d7da;
 }
 
 html { scroll-behavior: smooth; }
