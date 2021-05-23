@@ -34,6 +34,8 @@
     <link rel="stylesheet" href="css/components/project-information.css">
     <link rel="stylesheet" href="css/components/main-text.css">
     <link rel="stylesheet" href="css/components/main-form.css">
+    <link rel="stylesheet" href="css/components/information-message.css">
+    <link rel="stylesheet" href="css/components/close-button.css">
     <link rel="stylesheet" href="css/components/main-label.css">
     <link rel="stylesheet" href="css/components/main-input.css">
     <link rel="stylesheet" href="css/components/main-footer.css">
@@ -232,7 +234,12 @@
     <section class="main-section -fourth" id="contacts">
       <h2 class="main-title -second">Contatos</h2>
 
-      <form class="main-form" action="https://portfolio-feliz-backend.herokuapp.com/send-email" method="POST">
+      <div class="information-message">
+        <!-- Mensagem é adicionada aqui usando JS. -->
+        <button class="close-button" type="button" title="Fechar">&times;</button>
+      </div>
+
+      <form class="main-form">
         <label class="main-label" for="name">Nome</label>
         <input class="main-input" id="name" type="text" name="name" required>
 
@@ -257,5 +264,8 @@
         <span class="fab fa-linkedin"></span>
       </a>
     </footer>
+
+    <!-- JS -->
+    <script src="js/form.js"></script>
   </body>
 </html>
