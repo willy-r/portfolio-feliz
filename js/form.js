@@ -7,8 +7,9 @@ const closeButton = document.querySelector('.close-button');
 
 // Formulário.
 const form = document.querySelector('.main-form');
+const sendButton = document.querySelector('.main-button.-large');
 
-// Adiciona e mostra a mensagem verificando se o e-mail foi enviado ou não.
+// Adiciona e mostra a mensagem.
 function showInformationMessage(message, emailWasSent) {
   const classList = informationMessage.classList;
   const messageElement = `<p class="message">${message}</p>`;
@@ -27,7 +28,7 @@ function showInformationMessage(message, emailWasSent) {
   informationMessage.style.opacity = 1;
 }
 
-// Remove e depois fecha a mensagem.
+// Remove e fecha a mensagem.
 function closeInformationMessage() {
   informationMessage.style.opacity = 0;
   
@@ -37,9 +38,27 @@ function closeInformationMessage() {
   }, 1000);
 }
 
+// Adiciona e mostra o spinner.
+function showSpinner() {
+  const spinner = '<span class="fas fa-spinner fa-spin"></span>';
+
+  sendButton.textContent = '';
+  sendButton.disabled = true;
+  sendButton.insertAdjacentHTML('afterbegin', spinner);
+}
+
+// Remove e esconde o spinner.
+function hideSpinner() {
+  sendButton.removeChild(sendButton.firstChild);
+  sendButton.textContent = 'Enviar';
+  sendButton.disabled = false;
+}
+
 form.addEventListener('submit', event => {
   // Previne o comportamento padrão do formulário.
   event.preventDefault();
+
+  showSpinner();
 
   const data = new FormData(form);
 
@@ -47,18 +66,22 @@ form.addEventListener('submit', event => {
     method: 'POST',
     body: data,
   })
-  .then(response => response.json())
+  .then(response => response.ok ? response.json() : Promise.reject(response))
   .then(json => {
     // Limpa o formulário.
     form.reset();
 
     location.href = '#contacts';
     showInformationMessage(json.message, json.sent);
+    hideSpinner();
 
     // Fecha a mensagem de informação após 10 segundos.
     timeout = setTimeout(closeInformationMessage, 10000);
   })
-  .catch(err => console.error(err));
+  .catch(err => {
+    hideSpinner();
+    console.error(`${err.status}: ${err.statusText}`)
+  });
 });
 
 closeButton.addEventListener('click', () => {
