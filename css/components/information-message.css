@@ -4,6 +4,7 @@
     align-items: center;
     width: 100%;
     padding: 10px 15px;
+    transition: opacity 1s linear;
 }
 
 .information-message.-success {
@@ -29,8 +30,3 @@
 }
 
 .information-message .message { font-size: 25px; }
-
-@keyframes fade-out {
-    0% { opacity: 1; }
-    100% { opacity: 0; }
-}
