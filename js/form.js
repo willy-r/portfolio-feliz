@@ -24,15 +24,15 @@ function showInformationMessage(message, emailWasSent) {
 
   informationMessage.insertAdjacentHTML('afterbegin', messageElement);
   informationMessage.style.display = 'flex';
+  informationMessage.style.opacity = 1;
 }
 
 // Remove e depois fecha a mensagem.
 function closeInformationMessage() {
-  informationMessage.style.animation = 'fade-out 1s linear forwards';
+  informationMessage.style.opacity = 0;
   
   setTimeout(() => {
     informationMessage.removeChild(informationMessage.firstChild);
-    informationMessage.style.animation = 'none';
     informationMessage.style.display = 'none';
   }, 1000);
 }
@@ -49,13 +49,11 @@ form.addEventListener('submit', event => {
   })
   .then(response => response.json())
   .then(json => {
-    // Vai para a onde a mensagem vai ser exibida.
-    location.href = '#contacts';
-    // Mostra a mensagem de informação.
-    showInformationMessage(json.message, json.sent);
-
     // Limpa o formulário.
     form.reset();
+
+    location.href = '#contacts';
+    showInformationMessage(json.message, json.sent);
 
     // Fecha a mensagem de informação após 10 segundos.
     timeout = setTimeout(closeInformationMessage, 10000);
