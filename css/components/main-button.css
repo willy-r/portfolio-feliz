@@ -22,4 +22,8 @@
     font-size: 30px;
 }
 
+.main-button.-large:disabled { cursor: wait; }
+
+.main-button.-large:disabled:hover { transform: none; }
+
 .main-button.-large:hover { transform: scale(1.02); }
