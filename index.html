@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="css/base.css">
     <!-- Componentes. -->
     <link rel="stylesheet" href="css/components/main-header.css">
+    <link rel="stylesheet" href="css/components/main-dropdown.css">
     <link rel="stylesheet" href="css/components/main-avatar.css">
     <link rel="stylesheet" href="css/components/main-banner.css">
     <link rel="stylesheet" href="css/components/main-section.css">
@@ -45,7 +46,7 @@
   </head>
   <body>
     <!-- Cabeçalho, normalmente fica no início da página. -->
-    <header class="main-header">
+    <header class="main-header" id="top">
       <img class="main-avatar" src="assets/images/avatar.png" alt="Avatar do William Rodrigues">
 
       <!-- Navegação, tag utilizada para guardar os links de navegação do site. -->
@@ -54,9 +55,21 @@
         <a class="main-action" href="#projects">Projetos</a>
         <a class="main-action" href="#about">Sobre</a>
         <a class="main-action" href="#contacts">Contatos</a>
-        <a class="main-button" href="assets/resourses/cv-william-rodrigues.pdf" type="application/pdf" lang="en" download>
-          Download CV
-        </a>
+        
+        <div class="main-dropdown">
+          <button class="main-button -dropdown" lang="en">
+            Download CV <span class="fas fa-caret-down"></span>
+          </button>
+          
+          <div class="content">
+            <a class="link" href="assets/resourses/cv-william-rodrigues.pdf" download>
+              Português
+            </a>
+            <a class="link" href="assets/resourses/cv-william-rodrigues-en.pdf" download>
+              Inglês
+            </a>
+          </div>
+        </div>
       </nav>
     </header>
 
@@ -69,9 +82,20 @@
         </div>
         
         <div class="navigation">
-          <a class="main-button" href="assets/resourses/cv-william-rodrigues.pdf" type="application/pdf" lang="en" download>
-            Download CV
-          </a>
+          <div class="main-dropdown">
+            <button class="main-button -dropdown" lang="en">
+              Download CV <span class="fas fa-caret-down"></span>
+            </button>
+            
+            <div class="content">
+              <a class="link" href="assets/resourses/cv-william-rodrigues.pdf" download>
+                Português
+              </a>
+              <a class="link" href="assets/resourses/cv-william-rodrigues-en.pdf" download>
+                Inglês
+              </a>
+            </div>
+          </div>
           <a class="main-button" href="#contacts">Contatos</a>
         </div>
       </div>
@@ -263,9 +287,14 @@
       <a class="link" href="https://www.linkedin.com/in/william-rodrigues-dev/" target="_blank" rel="noreferrer noopener external" title="Ir para o Linkedin do William Rodrigues">
         <span class="fab fa-linkedin"></span>
       </a>
+      
+      <a class="link" href="#top" title="Voltar para o topo">
+        <span class="fas fa-caret-up"></span>
+      </a>
     </footer>
 
     <!-- JS -->
     <script src="js/form.js"></script>
+    <script src="js/dropdown.js"></script>
   </body>
 </html>
