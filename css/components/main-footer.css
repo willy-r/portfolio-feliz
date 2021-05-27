@@ -1,4 +1,5 @@
 .main-footer {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -7,15 +8,24 @@
     background-color: var(--color-black-first);
 }
 
-.main-footer .link { color: var(--color-third); }
-
-.main-footer .link:nth-child(odd) { color: var(--color-first); }
-
-.main-footer .link:not(:last-child) { margin-right: 40px; }
-
-.link .fab { 
+.main-footer .link { 
     font-size: 3.5em;
+    color: var(--color-third);
     transition: transform 200ms cubic-bezier(.42,0,.81,2.3);
 }
 
-.link .fab:hover { transform: scale(1.1); }
+.main-footer .link:hover { transform: scale(1.1); }
+
+/* Alterna entre a cor branca (padrão) e a cor vermelha,
+   menos o último filho (que é o botão de subir para o topo).
+*/
+.main-footer .link:nth-child(odd):not(:last-child) { color: var(--color-first); }
+
+.main-footer .link:not(:last-child) { margin-right: 40px; }
+
+.main-footer .link:last-child {
+    position: absolute;
+    right: 20px;
+    align-self: flex-end;
+    font-size: 3em;
+}
