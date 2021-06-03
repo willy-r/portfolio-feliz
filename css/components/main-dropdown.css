@@ -3,7 +3,7 @@
     display: inline-block;
 }
 
-.main-dropdown .content {
+.main-dropdown > .content {
     display: none; /* none por padrão, muda no JS. */
     position: absolute;
     z-index: 1;
@@ -13,16 +13,14 @@
     transition: opacity 300ms ease-out;
 }
 
-.content .link {
+.main-dropdown > .content > .item {
     display: block;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 0.5em;
     color: var(--color-third);
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: bold;
     text-align: center;
-    text-decoration: none;
-    transition: background-color 300ms ease-in-out;
+    transition: background-color 250ms ease-in-out;
 }
 
-.content .link:hover { background-color: var(--color-error); }
+.main-dropdown > .content > .item:hover { background-color: var(--color-error); }

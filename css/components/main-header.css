@@ -1,15 +1,16 @@
 .main-header {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
     background-color: var(--color-second);
     border-bottom: 10px solid var(--color-black-first);
 }
 
-.main-header .main-avatar {
-    margin-right: 15px;
+.main-header > .main-avatar {
+    margin: 0.625rem 0.625rem 0.625rem 0;
     transition: transform 250ms ease-in-out;
 }
 
-.main-header .main-avatar:hover { transform: scale(1.1); }
+.main-header > .main-avatar:hover { transform: scale(1.1); }

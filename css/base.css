@@ -21,3 +21,12 @@
 html { scroll-behavior: smooth; }
 
 body { font-family: var(--ff-first); }
+
+abbr { text-decoration: none; }
+
+a { text-decoration: none; }
+
+img {
+    display: block;
+    max-width: 100%;
+}

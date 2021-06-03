@@ -1,10 +1,9 @@
 .main-box {
-    display: inline-block;
-    padding: 35px 84px;
+    padding: 2.1875rem 5.25rem;
     background-color: var(--color-black-second);
     text-align: center;
     box-shadow: 10px 10px 0 var(--color-black-first);
 }
 
-/* Adiciona uma margem abaixo de todos os .main-title dentro de .main-box */
-.main-box .main-title { margin-bottom: 10px; }
+/* Adiciona uma margem embaixo de todos os .main-title que são filhos diretos de .main-box */
+.main-box > .main-title { margin-bottom: 1.5625rem; }
