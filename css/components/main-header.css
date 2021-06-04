@@ -14,3 +14,12 @@
 }
 
 .main-header > .main-avatar:hover { transform: scale(1.1); }
+
+.main-header > .main-button.-toggle-menu { display: none; }
+
+/* 885px ou menos. */
+@media (max-width: 55.3125em) {
+    .main-header > .menu { display: none; }
+
+    .main-header > .main-button.-toggle-menu { display: block; }
+}

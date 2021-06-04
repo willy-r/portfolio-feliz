@@ -1,11 +1,10 @@
 .main-action {
     display: inline-flex;
     align-items: center;
-    margin-right: 30px;
-    font-size: 20px;
+    margin-right: 1.5em;
+    font-size: 1.25rem; /* 20px */
     font-weight: bold;
     color: var(--color-third);
-    text-decoration: none;
     transition: transform 250ms ease-in-out;
 }
 
@@ -13,9 +12,9 @@
 
 /* Pseudo-elemento para criar o quadrado antes de alguma tag. */
 .main-action::before {
-    width: 10px;
-    height: 10px;
-    margin-right: 10px;
+    width: .5em;
+    height: .5em;
+    margin-right: .5em;
     content: '';
     background-color: var(--color-first);
 }

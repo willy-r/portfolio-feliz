@@ -1,6 +1,4 @@
 .progress-bar {
-    width: 320px;
-    height: 40px;
     /* IE 10+ ou caso algum navegador não reconheça a tag <progress>
        exibe o conteúdo dentro da tag com essa cor. 
     */

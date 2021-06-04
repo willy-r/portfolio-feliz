@@ -1,14 +1,24 @@
 .skill-description { display: flex; }
 
-.skill-description .logo {
-    width: 92px;
-    height: 92px;
-    margin-right: 18px;
+.skill-description > .logo {
+    margin-right: 1.125rem;
     filter: drop-shadow(-4px 4px 0px rgba(0, 0, 0, 0.4));
 }
 
-.skill-description .description {
+.skill-description > .description {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+}
+
+.skill-description > .description > .progress-bar {
+    width: 20rem;
+    min-height: 2.5rem;
+}
+
+@media (max-width: 30.5625em) {
+    .skill-description > .description > .progress-bar { 
+        width: 10rem;
+        min-height: 1.875rem;
+    }
 }

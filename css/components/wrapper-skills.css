@@ -2,13 +2,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    max-width: 1050px; /* Lê-se: "No máximo eu quero que tenha 1050px de largura". */
+    max-width: 77.84%; /* Lê-se: "No máximo eu quero que tenha 1050px de largura". */
 }
 
-.wrapper-skills .skill-description { margin-bottom: 38px; }
+.wrapper-skills > .skill-description { margin-bottom: 2.375rem; }
 
 /* Último filho (sempre vai ter margin-bottom: 0).
    Penúltimo filho só se ele for ímpar.
 */
-.wrapper-skills .skill-description:last-child,
-.wrapper-skills .skill-description:nth-last-child(2):nth-child(odd) { margin-bottom: 0; }
+.wrapper-skills > .skill-description:last-child,
+.wrapper-skills > .skill-description:nth-last-child(2):nth-child(odd) { margin-bottom: 0; }

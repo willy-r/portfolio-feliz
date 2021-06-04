@@ -1,8 +1,8 @@
 .main-title {
-    font-size: 2.8125rem;
+    font-size: 2.8125rem; /* 45px */
     font-weight: bold;
     color: var(--color-first);
-    text-shadow: 4px 4px 0 var(--color-black-first);
+    text-shadow: .1em .1em 0 var(--color-black-first);
 }
 
 /* Variação para um title com cor branca, com underline e sem sombra. */
