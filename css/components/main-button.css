@@ -36,6 +36,13 @@
 
 .main-button.-toggle-menu { font-size: .9rem; }
 
+.main-button.-toggle-menu:hover { background-color: var(--color-error); }
+
+.main-button.-toggle-menu:focus {
+    background-color: var(--color-error);
+    transform: none; 
+}
+
 .main-button.-dropdown:hover { background-color: var(--color-error); }
 
 .main-button.-dropdown:focus {

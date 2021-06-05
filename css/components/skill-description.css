@@ -16,6 +16,7 @@
     min-height: 2.5rem;
 }
 
+/* 489px ou menos. Breakpoint estratégico. */
 @media (max-width: 30.5625em) {
     .skill-description > .description > .progress-bar { 
         width: 10rem;

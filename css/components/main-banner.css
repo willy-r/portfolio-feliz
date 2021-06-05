@@ -25,28 +25,29 @@
 
 .main-banner > .wrapper > .navigation > .main-dropdown > .content > .item { font-weight: 500; }
 
-/* 749px ou menos. */
-@media (max-width: 46.8125em) {
+/* 767px ou menos. */
+@media (max-width: 47.9375em) {
     .main-banner > .wrapper { left: 2.9063rem; }
 
     .main-banner > .wrapper > .main-box { margin-bottom: 1.1875rem; }
 
     .main-banner > .wrapper > .navigation .main-button { font-size: 1rem; }
 
+    .main-banner > .wrapper > .navigation > .main-dropdown > .content { 
+        box-shadow: 4px 4px 0 var(--color-black-first);
+    }
+
     .main-banner > .wrapper > .navigation > .main-dropdown > .content > .item { font-size: 1rem; }
 }
 
-/* 399px ou menos. */
-@media (max-width: 24.9375em) {
+/* 359px ou menos. */
+@media (max-width: 22.4375em) {
     .main-banner > .wrapper { left: 1.25rem; }
-}
 
-/* 335px ou menos. */
-@media (max-width: 20.9375em) {
     .main-banner > .wrapper > .navigation {
         flex-direction: column-reverse;
         align-items: center;
     }
 
-    .main-banner > .wrapper > .navigation > .main-button { margin-bottom: 0.625rem; }
+    .main-banner > .wrapper > .navigation > .main-button { margin-bottom: .625rem; }
 }
