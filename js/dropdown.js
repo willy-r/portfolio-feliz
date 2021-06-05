@@ -4,6 +4,7 @@ const dropdownsList = Array.from(document.querySelectorAll('.main-dropdown'));
 // Esconde o conteúdo do dropdown.
 function hideDropdownContent(dropdownContent) {
   dropdownContent.style.opacity = 0;
+  
   setTimeout(() => {
     dropdownContent.style.display = 'none';
   }, 300);
