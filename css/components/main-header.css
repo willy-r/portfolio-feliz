@@ -2,14 +2,50 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
     background-color: var(--color-second);
     border-bottom: 10px solid var(--color-black-first);
 }
 
-.main-header .main-avatar {
-    margin-right: 15px;
+.main-header > .main-avatar {
+    margin: 0.625rem 0.625rem 0.625rem 0;
     transition: transform 250ms ease-in-out;
 }
 
-.main-header .main-avatar:hover { transform: scale(1.1); }
+.main-header > .menu > .main-action { margin-right: 1.5em; }
+
+.main-header > .main-avatar:hover { transform: scale(1.1); }
+
+.main-header > .main-button.-toggle-menu { display: none; /* none por padrão, muda na Media Query. */ }
+
+/* 885px ou menos. Breakpoint estratégico. */
+@media (max-width: 55.3125em) {
+    .main-header {
+        position: relative;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .main-header > .main-avatar { margin-bottom: .9375rem }
+
+    .main-header > .menu {
+        display: none; /* none por padrão nessa resolução, muda no JS. */
+        flex-direction: column;
+    }
+
+    /* Variação do elemento .menu utilizada para mostrar o menu usando JS. */
+    .main-header > .menu.-responsive { display: flex; }
+
+    .main-header > .menu.-responsive > .main-action:hover { transform: scale(1.1); }
+
+    .main-header > .menu.-responsive > .main-action::before { animation: spin 1s linear infinite reverse; }
+
+    .main-header > .menu.-responsive > * + * { margin-top: .625rem; }
+
+    .main-header > .main-button.-toggle-menu {
+        position: absolute;
+        top: 1.875rem;
+        right: 1.25rem;
+        display: block;
+    }
+}

@@ -38,24 +38,11 @@ ol, ul {
 	list-style: none;
 }
 
-blockquote, q {
-	quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
 /* Meus resets. */
 
-* { box-sizing: border-box; }
+*,
+*::before,
+*::after { box-sizing: border-box; }
 
 button {
     font-family: inherit;
@@ -70,5 +57,3 @@ progress {
        -moz-appearance: none; /* Firefox */
             appearance: none;
 }
-
-abbr { text-decoration: none; }

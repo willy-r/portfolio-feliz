@@ -1,19 +1,23 @@
 .main-text {
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 5.93032%;
+    padding-right: 5.93032%;
     font-family: var(--ff-second);
     color: var(--color-third);
-    font-size: 30px;
+    font-size: 1.875rem; /* 30px */
     text-align: justify;
     text-justify: distribute;
-    line-height: 1.3;
+    line-height: 1.3em;
 }
 
-.main-text .paragraph { text-indent: 100px; }
+.main-text > .paragraph { text-indent: 3.3333em; }
 
-.main-text .paragraph:not(:last-child) { margin-bottom: 15px; }
+.main-text > .paragraph:not(:last-child) { margin-bottom: .5em; }
 
-.paragraph .link {
-    color: var(--color-first);
-    text-decoration: none;
+.main-text > .paragraph > .link { color: var(--color-first); }
+
+.main-text > .paragraph > .link:hover { text-decoration-line: underline; }
+
+/* 479px ou menos. */
+@media (max-width: 29.9375em) {
+    .main-text { font-size: 1.2rem }
 }

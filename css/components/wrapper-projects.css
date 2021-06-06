@@ -2,7 +2,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    width: 80%;
+    width: 80%; /* 1079.2px */
 }
 
-.wrapper-projects .main-project { margin-bottom: 40px; }
+.wrapper-projects > .main-project {
+    position: relative;
+    margin-bottom: 2.5rem;
+    min-width: 17.5rem;
+    min-height: 17.5rem;
+}

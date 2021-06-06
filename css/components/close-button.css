@@ -1,7 +1,6 @@
 .close-button {
     color: var(--color-black-third);
-    font-size: 40px;
-    line-height: 0;
+    font-size: inherit;
     background-color: transparent;
     transition: color 250ms ease-in-out;
 }

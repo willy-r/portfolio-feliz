@@ -1,23 +1,51 @@
 .main-banner {
-    height: 800px;
-    background-image: url(../../assets/images/background.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    min-height: 50rem;
+    /* color image position/size repeat attachment 
+       A cor está definida para quando a imagem estiver carregando, ela ser mostrada.
+    */
+    background: var(--color-second) url(../../assets/images/background.jpg) center/cover no-repeat;
     border-bottom: 10px solid var(--color-black-first);
 }
 
-.main-banner .wrapper {
+.main-banner > .wrapper {
     display: inline-block;
     position: relative;
-    top: 116px;
-    left: 93px;
+    top: 7.25rem;
+    left: 5.8125rem;
 }
 
-.main-banner .main-box { margin-bottom: 38px; }
+.main-banner > .wrapper > .main-box { margin-bottom: 2.375rem; }
 
-.main-banner .navigation {
+.main-banner > .wrapper > .navigation {
     display: flex;
     justify-content: space-around;
 }
 
-.navigation .main-button { font-weight: 500; }
+.main-banner > .wrapper > .navigation > .main-dropdown > .content > .item { font-weight: 500; }
+
+.main-banner > .wrapper > .navigation .main-button { font-weight: 500; }
+
+/* 767px ou menos. */
+@media (max-width: 47.9375em) {
+    .main-banner > .wrapper { left: 2.1rem; }
+
+    .main-banner > .wrapper > .main-box { margin-bottom: 1.1875rem; }
+
+    .main-banner > .wrapper > .navigation > .main-dropdown > .content { box-shadow: 4px 4px 0 var(--color-black-first); }
+
+    .main-banner > .wrapper > .navigation > .main-dropdown > .content > .item { font-size: 1rem; }
+
+    .main-banner > .wrapper > .navigation .main-button { font-size: 1rem; }
+}
+
+/* 359px ou menos. */
+@media (max-width: 22.4375em) {
+    .main-banner > .wrapper { left: 1.25rem; }
+
+    .main-banner > .wrapper > .navigation {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .main-banner > .wrapper > .navigation > .main-button { margin-bottom: .625rem; }
+}

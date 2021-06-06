@@ -13,7 +13,7 @@ Portfólio feito durante o curso **HTML e CSS Feliz** do [Marco Bruno](https://w
 
 ## Sobre
 
-Projeto de um portfólio (não responsivo por enquanto) feito durante o curso do Marco Bruno usando HTML e CSS, tentando deixar ele o mais acessível possível para todos e seguindo boas práticas.
+Projeto de um portfólio feito durante o curso do Marco Bruno usando HTML e CSS, tentando deixar ele o mais acessível possível para todos e seguindo boas práticas.
 
 
 ## Extras

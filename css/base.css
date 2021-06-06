@@ -20,4 +20,20 @@
 
 html { scroll-behavior: smooth; }
 
-body { font-family: var(--ff-first); }
+body {
+    overflow-x: hidden;
+    font-family: var(--ff-first);
+}
+
+abbr { text-decoration: none; }
+
+em { font-style: italic; }
+
+strong { font-weight: 900; }
+
+a { text-decoration: none; }
+
+img {
+    display: block;
+    max-width: 100%;
+}
