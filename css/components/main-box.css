@@ -23,7 +23,7 @@
     .main-box > .main-subtitle { font-size: 1rem; }
 }
 
-/* 359 ou menos. */
+/* 359px ou menos. */
 @media (max-width: 22.4375em) {
     .main-box { 
         padding-left: 1.3125rem;

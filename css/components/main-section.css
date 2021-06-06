@@ -29,4 +29,7 @@
     border-bottom: none;
 }
 
-.main-section.-fourth > .information-message { margin-bottom: 2.1875rem; }
+.main-section.-fourth > .information-message {
+    width: 100%;
+    margin-bottom: 2.1875rem; 
+}

@@ -1,7 +1,19 @@
 .main-form { width: 100%; }
 
-.main-form .main-label { margin-bottom: 5px; }
+.main-form > .main-label { margin-bottom: .1429em; }
 
-.main-form .main-input { margin-bottom: 20px; }
+.main-form > .main-input { margin-bottom: 1em; }
 
-.main-form .main-input.-textarea { margin-bottom: 35px; }
+.main-form > .main-input.-textarea {
+    min-height: 15em;
+    margin-bottom: 1.75em;
+}
+
+/* 479px ou menos. */
+@media (max-width: 29.9375em) {
+    .main-form > .main-label { font-size: 1.875rem; }
+
+    .main-form > .main-input { font-size: .9375rem; }
+
+    .main-form > .main-button.-large { font-size: 1.5625rem; }
+}

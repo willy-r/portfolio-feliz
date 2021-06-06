@@ -21,5 +21,6 @@
     .skill-description > .description > .progress-bar { 
         width: 10rem;
         min-height: 1.875rem;
+        border-width: 3px;
     }
 }

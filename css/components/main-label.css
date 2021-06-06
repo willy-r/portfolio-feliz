@@ -1,6 +1,6 @@
 .main-label {
     display: block;
     font-family: var(--ff-second);
-    font-size: 35px;
+    font-size: 2.1875rem; /* 35px */
     color: var(--color-third);
 }
