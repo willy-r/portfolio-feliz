@@ -1,0 +1,25 @@
+html { scroll-behavior: smooth; }
+
+body {
+    overflow-x: hidden;
+    font-family: $ff-primary;
+}
+
+button {
+    font-family: inherit;
+    border: none;
+    cursor: pointer;
+}
+
+abbr { text-decoration: none; }
+
+em { font-style: italic; }
+
+strong { font-weight: 900; }
+
+a { text-decoration: none; }
+
+img {
+    display: block;
+    max-width: 100%;
+}

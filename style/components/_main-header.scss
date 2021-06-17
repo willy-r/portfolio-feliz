@@ -1,0 +1,59 @@
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.625rem 1.25rem;
+    background-color: $color-second;
+    border-bottom: 10px solid $color-black;
+
+    > .main-avatar {
+        margin: {
+            top: .625rem;
+            right: .625rem;
+            bottom: .625rem;   
+        }
+        transition: transform 250ms ease-in-out;
+
+        &:hover { transform: scale(1.1); }
+    }
+
+    > .menu > .main-action { margin-right: 1.5em; }
+
+    > .main-button.-toggle-menu { display: none; }
+}
+
+// 885px ou menos. Breakpoint estratégico.
+@media (max-width: 55.3125em) {
+    .main-header {
+        position: relative;
+        flex-direction: column;
+        align-items: flex-start;
+
+        > .main-avatar { margin-bottom: .9375rem }
+
+        > .menu {
+            display: none; // none por padrão nessa resolução, muda no JS.
+            flex-direction: column;
+        }
+
+        // Variação do elemento .menu utilizada para mostrar o menu usando JS.
+        > .menu.-responsive {
+            display: flex;
+
+            > * + * { margin-top: .625rem; }
+        }
+
+        > .menu.-responsive > .main-action {
+            &:hover { transform: scale(1.1); }
+
+            &::before { animation: spin 1s linear infinite reverse; }
+        }
+
+        > .main-button.-toggle-menu {
+            position: absolute;
+            top: 1.875rem;
+            right: 1.25rem;
+            display: block;
+        }
+    }
+}

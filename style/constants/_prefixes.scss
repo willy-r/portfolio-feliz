@@ -1,0 +1,5 @@
+@mixin generic-prefixes($property, $value) {
+    -webkit-#{$property}: $value; // Google Chrome, Apple Safari, Opera (16+)
+       -moz-#{$property}: $value; // Firefox
+            #{$property}: $value;
+}

@@ -1,0 +1,32 @@
+.main-footer {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: .625em 1.25em;
+    min-height: 6.25em;
+    font-size: 1rem; // 16px
+    background-color: $color-black;
+
+    > .link { 
+        font-size: 3.125em;
+        color: $color-third;
+        transition: transform 200ms cubic-bezier(.42,0,.81,2.3);
+
+        &:hover { transform: scale(1.1); }
+
+        // Alterna entre a cor branca (padrão) e a cor vermelha,
+        // menos o último filho (que é o botão de subir para o topo).
+        &:nth-child(odd):not(:last-child) { color: $color-first; }
+
+        &:not(:last-child) { margin-right: .8em; }
+
+        &:last-child {
+            position: absolute;
+            right: 20px;
+            align-self: flex-end;
+            font-size: 2.5em;
+        }
+    }
+}
