@@ -1,0 +1,12 @@
+.main-avatar {
+    border: 1px solid $color-third;
+    box-shadow: 5px 5px 0 $color-black;
+
+    &.-large {
+        border: {
+            radius: 50%;
+            width: 3px;
+        }
+        box-shadow: 0 10px 20px $color-black;
+    }
+}

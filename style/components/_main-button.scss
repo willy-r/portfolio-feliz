@@ -1,0 +1,57 @@
+@mixin on-button-focus {
+    background-color: $color-error;
+    transform: none; 
+}
+
+.main-button {
+    display: inline-block;
+    padding: .9em 1em;
+    font: {
+        size: 1.25rem; // 20px
+        weight: 900;
+    }
+    color: $color-third;
+    text-align: center;
+    background-color: $color-first;
+    box-shadow: .25em .25em 0 $color-black;
+    transition: transform 300ms cubic-bezier(.42,0,.56,2.28),
+                background-color 300ms ease-in-out;
+
+    &:hover { transform: scale(1.05); }
+
+    &.-large {
+        display: block;
+        width: 100%;
+        padding: {
+            top: .3333em;
+            bottom: .3333em;
+        }
+        font-size: 1.875rem;
+
+        &:hover { transform: scale(1.02); }
+
+        &:disabled { cursor: wait; }
+
+        &:disabled:hover { transform: none; }
+    }
+    
+    &.-dropdown {
+        &:hover { background-color: $color-error; }
+
+        &:focus { @include on-button-focus; }
+    }
+
+    &.-toggle-menu {
+        font-size: .9rem;
+
+        &:hover { background-color: $color-error; }
+
+        &:focus { @include on-button-focus; }
+    }
+
+    &.-dropdown {
+        &:hover { background-color: $color-error; }
+
+        &:focus { @include on-button-focus; }
+    }
+}

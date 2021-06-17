@@ -1,8 +1,0 @@
-.close-button {
-    color: var(--color-black-third);
-    font-size: inherit;
-    background-color: transparent;
-    transition: color 250ms ease-in-out;
-}
-
-.close-button:hover { color: var(--color-black-second); }

@@ -1,0 +1,36 @@
+@mixin set-message-colors($color, $bg-color, $bd-color) {
+    color: $color;
+    background-color: $bg-color;
+    border: 1px solid $bd-color;
+}
+
+@mixin set-message-before($message) {
+    font-weight: 600;
+    content: $message;
+}
+
+.information-message {
+    display: none; // none por padrão, muda no JS.
+    justify-content: space-between;
+    align-items: center;
+    padding: .4em .6em;
+    font-size: 1.5625rem; // 25px
+    transition: opacity 1s linear;
+
+    &.-success {
+        @include set-message-colors($color-success, $color-success-bg, $color-success-bd);
+
+        > .message::before { @include set-message-before('Sucesso: '); }
+    }
+
+    &.-error {
+        @include set-message-colors($color-error, $color-error-bg, $color-error-bd);
+
+        > .message::before { @include set-message-before('Erro: '); }
+    }
+}
+
+// 479px ou menos.
+@media (max-width: 29.9375em) {
+    .information-message { font-size: .9375rem; }
+}

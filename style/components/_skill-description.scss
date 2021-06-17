@@ -1,0 +1,29 @@
+@mixin set-bar-size($width, $min-height) {
+    width: $width;
+    min-height: $min-height;
+}
+
+.skill-description {
+    display: flex;
+
+    > .logo {
+        margin-right: 1.125rem;
+        filter: drop-shadow(-4px 4px 0px $color-black-ds);
+    }
+
+    > .description {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    
+        > .progress-bar { @include set-bar-size(20rem, 2.5rem); }
+    }
+}
+
+// 489px ou menos. Breakpoint estratégico.
+@media (max-width: 30.5625em) {
+    .skill-description > .description > .progress-bar {
+        @include set-bar-size(10rem, 1.875rem);
+        border-width: 3px;
+    }
+}

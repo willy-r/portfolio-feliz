@@ -1,0 +1,25 @@
+.main-form {
+    width: 100%;
+
+    > .main-label { margin-bottom: .1429em; }
+
+    > .main-input {
+        margin-bottom: 1em;
+
+        &.-textarea {
+            min-height: 15em;
+            margin-bottom: 1.75em;
+        }
+    }
+}
+
+// 479px ou menos.
+@media (max-width: 29.9375em) {
+    .main-form {
+        > .main-label { font-size: 1.875rem; }
+
+        > .main-input { font-size: .9375rem; }
+
+        > .main-button.-large { font-size: 1.5625rem; }
+    }
+}

@@ -1,0 +1,14 @@
+.progress-bar {
+    // IE 10+ ou caso algum navegador não reconheça a tag <progress>
+    // exibe o conteúdo dentro da tag com essa cor.
+    color: $color-second;
+    background-color: $color-third;
+    border: 5px solid $color-black;
+
+    // Google Chrome, Apple Safari, Opera (16+)
+    &::-webkit-progress-bar { background-color: $color-third; }
+    &::-webkit-progress-value { background-color: $color-second; }
+
+    // Firefox
+    &::-moz-progress-bar { background-color: $color-second; }
+}

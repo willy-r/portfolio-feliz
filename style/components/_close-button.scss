@@ -1,0 +1,8 @@
+.close-button {
+    color: $color-gray-second;
+    font-size: inherit;
+    background-color: transparent;
+    transition: color 250ms ease-in-out;
+
+    &:hover { color: $color-gray; }
+}

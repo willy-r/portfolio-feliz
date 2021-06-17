@@ -1,0 +1,39 @@
+.main-box {
+    padding: 2.1875rem 5.25rem;
+    background-color: $color-gray;
+    text-align: center;
+    box-shadow: 10px 10px 0 $color-black;
+
+    // Adiciona uma margem embaixo de todos os .main-title que são filhos diretos de .main-box
+    > .main-title { margin-bottom: 1.5625rem; }
+}
+
+// 767px ou menos.
+@media (max-width: 47.9375em) {
+    .main-box { 
+        padding:  1.0938rem 2.625rem;
+        box-shadow: 5px 5px 0 $color-black;
+    
+        
+        > .main-title {
+            margin-bottom: .7813rem; 
+            font-size: 1.3125rem;
+        }
+    
+        > .main-subtitle { font-size: 1rem; }
+    }
+}
+
+// 359px ou menos.
+@media (max-width: 22.4375em) {
+    .main-box {
+        padding: {
+            left: 1.3125rem;   
+            right: 1.3125rem;
+        }
+
+        > .main-title { font-size: 1.0625rem }
+    
+        > .main-subtitle { font-size: 1rem; }
+    }
+}
