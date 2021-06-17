@@ -17,13 +17,17 @@
     font-size: 1.5625rem; // 25px
     transition: opacity 1s linear;
 
-    &.-success { @include set-message-colors($color-success, $color-success-bg, $color-success-bd); }
+    &.-success {
+        @include set-message-colors($color-success, $color-success-bg, $color-success-bd);
 
-    &.-success > .message::before { @include set-message-before('Sucesso: '); }
+        > .message::before { @include set-message-before('Sucesso: '); }
+    }
 
-    &.-error { @include set-message-colors($color-error, $color-error-bg, $color-error-bd); }
+    &.-error {
+        @include set-message-colors($color-error, $color-error-bg, $color-error-bd);
 
-    &.-error > .message::before { @include set-message-before('Erro: '); }
+        > .message::before { @include set-message-before('Erro: '); }
+    }
 }
 
 // 479px ou menos.

@@ -1,0 +1,17 @@
+.wrapper-projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80%; // 1079.2px
+
+    > .main-project {
+        $size: 17.5rem;
+
+        position: relative;
+        margin-bottom: 2.5rem;
+        min: {
+            width: $size;
+            height: $size;
+        }
+    }
+}

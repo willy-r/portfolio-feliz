@@ -1,0 +1,45 @@
+@mixin set-section-colors($bg-color: $color-first, 
+                          $bd-color: $color-second, 
+                          $bd-width: 10px) {
+    background-color: $bg-color;
+
+    @if ($bd-width == 0) {
+        border-bottom: none;
+    } @else {
+        border-bottom: $bd-width solid $bd-color;
+    }
+}
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: {
+        top: 3.4375rem;
+        bottom: 4.375rem;
+    }
+    @include set-section-colors;
+
+    > .main-title { margin-bottom: 3.4375rem; }
+
+    &.-second { @include set-section-colors($color-black, $color-first); }
+
+    &.-third {
+        @include set-section-colors($color-second, $color-black);
+
+        > .main-avatar { margin-bottom: 2.1875rem; }
+    }
+
+    &.-fourth {
+        padding: {
+            left: 2.5rem;
+            right: 2.5rem;
+        }
+        @include set-section-colors($bg-color: $color-gray, $bd-width: 0);
+
+        > .information-message {
+            width: 100%;
+            margin-bottom: 2.1875rem;
+        }
+    }
+}

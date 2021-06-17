@@ -1,0 +1,20 @@
+.project-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: $ff-secondary;
+    text-align: right;
+
+    > .main-subtitle.-second {
+        margin-bottom: .4444444em;
+        font-size: 1.125rem; // 18px
+        text-decoration-line: underline;  
+    }
+
+    > .description {
+        color: $color-third;
+        font-size: .9375rem; // 15px
+        line-height: 1.2em;
+    }
+
+}

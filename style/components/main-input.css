@@ -1,7 +1,0 @@
-.main-input {
-    width: 100%;
-    padding: .4em .25em;
-    font-family: var(--ff-second);
-    font-size: 1.25rem; /* 20px */
-    border: .25em solid var(--color-black-first);
-}

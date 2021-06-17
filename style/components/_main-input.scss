@@ -1,0 +1,9 @@
+.main-input {
+    width: 100%;
+    padding: .4em .25em;
+    font: {
+        family: $ff-secondary;
+        size: 1.25rem; // 20px
+    }
+    border: .25em solid $color-black;
+}

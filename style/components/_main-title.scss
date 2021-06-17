@@ -1,0 +1,17 @@
+.main-title {
+    font: {
+        size: 2.8125rem; // 45px
+        weight: 900;
+    }
+    color: $color-first;
+    text-shadow: .1em .1em 0 $color-black;
+
+    // Variação para um title com cor branca, com underline e sem sombra.
+    &.-second {
+        color: $color-third;
+        text: {
+            decoration: { line: underline; }
+            shadow: none;
+        }
+    }
+}

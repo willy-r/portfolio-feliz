@@ -1,0 +1,33 @@
+.main-text {
+    padding: {
+        left: 5.93032%;
+        right: 5.93032%;
+    }
+    font: {
+        size: 1.875rem; // 30px
+        family: $ff-secondary;
+    }
+    color: $color-third;
+    text: {
+        align: justify;
+        justify: distribute;
+    }
+    line-height: 1.3em;
+
+    > .paragraph {
+        text-indent: 3.3333em;
+
+        &:not(:last-child) { margin-bottom: .5em; }
+    }
+
+    > .paragraph > .link {
+        color: $color-first;
+
+        &:hover { text-decoration-line: underline; }
+    }
+}
+
+// 479px ou menos.
+@media (max-width: 29.9375em) {
+    .main-text { font-size: 1.2rem }
+}

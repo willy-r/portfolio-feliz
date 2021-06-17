@@ -1,0 +1,10 @@
+.main-subtitle {
+    font: {
+        size: 2.1875rem; // 35px
+        weight: 500;
+    }
+    color: $color-third;
+    text-shadow: .1em .1em 0 $color-black;
+
+    &.-second { text-shadow: none; }
+}
