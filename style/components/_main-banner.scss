@@ -2,7 +2,7 @@
     min-height: 50rem;
     // color image position/size repeat attachment 
     // A cor está definida para quando a imagem estiver carregando, ela ser mostrada.
-    background: $color-second url(../../assets/images/background.jpg) center/cover no-repeat;
+    background: $color-second url(../assets/images/background.jpg) center/cover no-repeat;
     border-bottom: 10px solid $color-black;
 
     > .wrapper {
