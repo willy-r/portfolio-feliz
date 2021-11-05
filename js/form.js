@@ -66,22 +66,19 @@ form.addEventListener('submit', event => {
     method: 'POST',
     body: data,
   })
-    .then(response => response.ok ? response.json() : Promise.reject(response))
-    .then(json => {
-      // Limpa o formulário.
-      form.reset();
+  .then(response => response.ok ? response.json() : Promise.reject(response))
+  .then(json => {
+    location.href = '#contacts';
+    showInformationMessage(json.message, json.sent);
+    hideSpinner();
 
-      location.href = '#contacts';
-      showInformationMessage(json.message, json.sent);
-      hideSpinner();
-
-      // Fecha a mensagem de informação após 10 segundos.
-      timeout = setTimeout(closeInformationMessage, 10000);
-    })
-    .catch(err => {
-      hideSpinner();
-      console.error(`${err.status}: ${err.statusText}`)
-    });
+    // Fecha a mensagem de informação após 10 segundos.
+    timeout = setTimeout(closeInformationMessage, 10000);
+  })
+  .catch(err => {
+    hideSpinner();
+    console.error(`${err.status}: ${err.statusText}`)
+  });
 });
 
 closeButton.addEventListener('click', () => {
